@@ -1,0 +1,158 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Separability of Elements in Free Groups
+% Matt Clay, John Conant and Nivetha Ramasubramanian
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,reqno]{amsart}
+\usepackage{amsmath,amssymb,amsthm,pinlabel,mathtools}
+\usepackage[usenames]{color}
+\usepackage[draft]{hyperref}
+\usepackage{ifthen}
+\usepackage[all]{xy}
+
+\long\def\red#1{\textcolor {red}{#1}}
+\long\def\blue#1{\textcolor {blue}{#1}}
+\long\def\green#1{\textcolor {green}{#1}}
+\long\def\yellow#1{\textcolor {yellow}{#1}}
+
+\usepackage[all]{xy}
+
+%commands for common groups and functions
+
+\newcommand{\BN}{\mathbb{N}} 
+\newcommand{\BP}{\mathbb{P}}
+\newcommand{\BQ}{\mathbb{Q}}
+\newcommand{\BR}{\mathbb{R}}
+\newcommand{\BZ}{\mathbb{Z}} 
+
+\newcommand{\CA}{\mathcal{A}}
+\newcommand{\CB}{\mathcal{B}}
+\newcommand{\CC}{\mathcal{C}}
+\newcommand{\CE}{\mathcal{E}}
+\newcommand{\CL}{\mathcal{L}}
+\newcommand{\CN}{\mathcal{N}}
+\newcommand{\CP}{\mathcal{P}}
+\newcommand{\CQ}{\mathcal{Q}}
+\newcommand{\CT}{\mathcal{T}}
+\newcommand{\CX}{\mathcal{X}}
+
+\newcommand{\pmone}{\ensuremath{\{\pm 1\}}}
+\newcommand{\co}{\colon\thinspace}
+\newcommand{\ol}{\overline}
+\newcommand{\la}{\langle}
+\newcommand{\ra}{\rangle}
+\newcommand{\inv}{^{-1}}
+
+\newcommand{\bd}{\partial}
+\newcommand{\iv}{\partial_0}
+\newcommand{\tv}{\partial_1}
+
+\newcommand{\ttmatrix}[4]{\setlength{\arraycolsep}{2pt}\bigl[
+  {\tiny\begin{array}{rr} #1 & #2 \\ #3 & #4
+    \end{array}}\bigr]}
+
+%makes theorem environments
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem*{maintheorem}{Separability Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{claim}[theorem]{Claim}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{convention}[theorem]{Convention}
+
+\numberwithin{theorem}{section}
+\renewcommand{\theenumi}{\arabic{enumi}}
+
+\newcounter{exercise}
+\newtheorem{exercise}[exercise]{Exercise}
+\numberwithin{exercise}{section}
+
+\newtheorem{activity}{Programming Activity}
+
+% number equations by section:
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\let\ssection=\section
+\renewcommand{\section}{\setcounter{equation}{0}\ssection}
+
+\newcounter{lcounter}
+
+%new math operators
+
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\Sym}{Sym}
+\DeclareMathOperator{\Wh}{Wh}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title[Separability of Elements in Free Groups]{Separability of
+  Elements in Free Groups}
+
+\author[M.~Clay, J.~Conant \& N.~Ramasubramanian]{Matt Clay, John
+  Conant and Nivetha Ramasubramanian}
+\address{Dept.\ of Mathematics \\
+  Allegheny College\\
+  Meadville, PA 16335}
+
+\thanks{\tiny Partially supported by NSF grant DMS-1006898}
+
+\begin{abstract}
+\end{abstract}
+
+\maketitle
+
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}\label{sec:intro}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Background}\label{sec:background}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Free Groups}\label{ssc:freegroups}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Graphs}\label{ssc:graphs}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Stalling's Algorithm}\label{sec:stallings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research Questions}\label{sec:questions}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Free Group Calculator}\label{sec:fgc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Results}\label{sec:results}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Future Directions/Questions}\label{sec:future}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
